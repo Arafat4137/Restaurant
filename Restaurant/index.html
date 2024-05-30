@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#designers">Designers</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contract">Contract</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="showcase">
+        <h1>Welcome to Our Showcase</h1>
+        <p>Experience the best designs in town.</p>
+        <div class="grid">
+            <img src="showcase-01.jpg" alt="Showcase Image 01">
+            <img src="showcase-02.jpg" alt="Showcase Image 01">
+            <img src="showcase-03.jpg" alt="Showcase Image 01">
+            <img src="showcase-04.jpg" alt="Showcase Image 01">
+            <img src="showcase-05.jpg" alt="Showcase Image 01">
+            <img src="showcase-06.jpg" alt="Showcase Image 01">
+        </div>
+       
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, est consequatur quibusdam ratione eligendi officiis rerum ex velit cum voluptates amet, recusandae quia dolorem quam, tempore distinctio fugiat ea enim!</p>
+    </section>
+
+    <section id="designers">
+        <h2>Designers</h2>
+        <p>Meet our team of talented designers.</p>
+        <div class="grid">
+                <img src="person-01.jpg" alt="Person Image 01">
+                <img src="person-02.jpg" alt="Person Image 02">
+                <img src="person-03.jpg" alt="Person Image 03">
+        </div>
+    </section>
+
+    <section id="packages">
+        <h2>Packages</h2>
+        <div class="package-option">
+            <h3>Basic Package</h3>
+            <p>Choose the number of rooms you want:</p>
+            <div class="room-selection">
+                <button id="minus-btn-basic">-</button>
+                <span id="room-count-basic">1</span> room - $<span id="room-price-basic">199</span>
+                <button id="plus-btn-basic">+</button>
+            </div>
+            <button id="signup-btn-basic">Sign Up</button>
+            <p id="thank-you-msg-basic" style="display: none;">Thank you for choosing <span id="chosen-rooms-basic">1</span> room(s) for the Basic Package.</p>
+        </div>
+        <div class="package-option">
+            <h3>Pro Package</h3>
+            <p>Choose the number of rooms you want:</p>
+            <div class="room-selection">
+                <button id="minus-btn-pro">-</button>
+                <span id="room-count-pro">1</span> room - $<span id="room-price-pro">299</span>
+                <button id="plus-btn-pro">+</button>
+            </div>
+            <button id="signup-btn-pro">Sign Up</button>
+            <p id="thank-you-msg-pro" style="display: none;">Thank you for choosing <span id="chosen-rooms-pro">1</span> room(s) for the Pro Package.</p>
+        </div>
+    </section>
+
+    <section id="contract">
+        <h2>Contract</h2>
+        <p>Contact us for more information or to subscribe to our newsletter.</p>
+        <form id="subscription-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
